@@ -51,7 +51,7 @@ public class RegisterTest extends DriverSetUp {
 
             Thread.sleep(2000);
 
-            // Click on the Register button
+
             WebElement registerButton = browser.findElement(By.cssSelector("button[type='submit']"));
             registerButton.click();
             Thread.sleep(5000);

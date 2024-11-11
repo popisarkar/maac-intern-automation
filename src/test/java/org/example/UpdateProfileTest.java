@@ -12,16 +12,16 @@ public class UpdateProfileTest extends DriverSetUp{
     public void UpdateTest() throws InterruptedException {
 
         browser.get("https://www.xampro.org/login");
-       WebElement emailField = browser.findElement(By.xpath("//input[@id='email']"));
-       WebElement passwordField = browser.findElement(By.xpath("//input[@id='password']"));
-       emailField.clear();
-       emailField.sendKeys("popysarkar025@gmail.com");
+        WebElement emailField = browser.findElement(By.xpath("//input[@id='email']"));
+        WebElement passwordField = browser.findElement(By.xpath("//input[@id='password']"));
+        emailField.clear();
+        emailField.sendKeys("popysarkar025@gmail.com");
 
-       passwordField.clear();
-       passwordField.sendKeys("Popi@6767");
+        passwordField.clear();
+        passwordField.sendKeys("Popi@6767");
 
-       WebElement loginButton =browser.findElement(By.xpath("//button[@type='submit']"));
-       loginButton.click();
+        WebElement loginButton =browser.findElement(By.xpath("//button[@type='submit']"));
+        loginButton.click();
         Thread.sleep(3000);
 
         WebElement ProFileclick =browser.findElement(By.xpath("//div[@class='profile-view-btn nav-item dropdown']//a[@id='basic-nav-dropdown']"));
