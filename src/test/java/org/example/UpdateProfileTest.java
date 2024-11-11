@@ -24,14 +24,17 @@ public class UpdateProfileTest extends DriverSetUp{
         loginButton.click();
         Thread.sleep(3000);
 
-        WebElement ProFileclick =browser.findElement(By.xpath("//div[@class='profile-view-btn nav-item dropdown']//a[@id='basic-nav-dropdown']"));
+
+
+         WebElement ProFileclick =browser.findElement(By.xpath("//div[@class='profile-view-btn nav-item dropdown']//a[@id='basic-nav-dropdown']"));
 
         ProFileclick.click();
         Thread.sleep(3000);
         WebElement drop= browser.findElement(By.xpath("//span[normalize-space()='Profile']"));
         drop.click();
         Thread.sleep(3000);
-
+        WebElement img = browser.findElement(By.xpath("//input[@type='file']"));
+        img.sendKeys("\"C:\\Users\\KHAN GADGET\\Desktop\\download (1).jpg\"");
 
        WebElement date =browser.findElement(By.xpath("//input[@id='dob']"));
        date.sendKeys("12/26/2000");
