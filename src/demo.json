@@ -1,0 +1,16 @@
+[
+  {
+    "fullName": "John Doe",
+    "email": "john.doe@example.com",
+    "phone": "1234567890",
+    "password": "password123",
+    "confirmPassword": "password123"
+  },
+  {
+    "fullName": "Jane Smith",
+    "email": "popisarkar027@gmail.com",
+    "phone": "01608401152",
+    "password": "Popi@6767",
+    "confirmPassword": "Popi@6767"
+  }
+]
